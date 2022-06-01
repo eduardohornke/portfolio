@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Portfólio</title>
+  </head>
+  <body>
+
+    <body class="container">
+
+        <div class="hamburguer">
+          <div class="line" id="line1"></div>
+          <div class="line" id="line2"></div>
+          <div class="line" id="line3"></div>
+          <span>fechar</span>
+        </div>  
+
+        <header id="home">
+            <div class="img-wrapper">
+                <video autoplay muted loop>
+                   <source src="assets/media/fundo.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="banner">
+                <h1>Eduardo Hornke</h1>
+                <p>Desenvolvedor Front End</p>
+                <a href="#conhecimentos">
+                <button>Saiba mais</button>
+              </a>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+          <nav>
+            <ul class="menu">
+              <li class="menu-item"><a href="#" class="menu-link">Inicio</a></li>
+              <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+              <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+              <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+            </ul>
+          </nav>
+          <div class="social-media">
+            <a href="https://www.linkedin.com/in/eduardohornke/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/eduardohornke" target="_blank"><i class="fab fa-github-alt"></i></a>
+          </div>
+        </aside>
+
+        <section class="sessao-conhecimentos" id="conhecimentos">
+            <div class="sessao-header">
+                <h1>Conhecimentos</h1>
+            </div>
+
+        <div id="imgconhecimento">
+
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="html">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="css">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" alt="bootstrap">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original.svg" alt="jquery">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg" alt="typescript">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react">
+                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png" alt="angular">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="reduxjs"> <br>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb">
+
+        </div>
+
+        </section>
+
+
+        <div class="sessao-projetos" id="projetos">
+            <div class="sessao-header">
+              <h1>Projetos</h1>
+            </div>
+            <div class="projetos">
+            </div>
+  
+          </section>
+  
+          <section class="sessao-contato" id="contato">
+            <div class="contato-wrapper">
+              <div class="contato-left"></div>
+              <div class="contato-right">
+                <h1>Contato</h1>
+                <form>
+                  <div class="input-group">
+                    <input type="text" class="field" id="nome">
+                    <label for="nome" class="field-label">Nome</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" class="field" id="email">
+                    <label for="email" class="field-label">E-mail</label>
+                  </div>
+                  <div class="input-group">
+                    <textarea class="field" id="mensagem"></textarea>
+                    <label for="mensagem" class="field-label">Mensagem</label>
+                  </div>
+                  <button type="submit" class="btn btn-submit">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </section>
+  
+          <footer>
+            <div class="footer-content">
+              <p>
+                &copy; Eduardo Hörnke
+              </p>
+            </div>
+          </footer>
+          <a href="#home" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+          </a>
+      </div>
+        <script src="assets/script.js"></script>
+    </body>
+</html>
