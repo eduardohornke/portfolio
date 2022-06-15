@@ -3,11 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Portfólio</title>
   </head>
-  <body>
-
     <body class="container">
 
         <div class="hamburguer">
@@ -38,12 +36,14 @@
               <li class="menu-item"><a href="#" class="menu-link">Inicio</a></li>
               <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
               <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
-              <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+              <li class="menu-item"><a href="/assets/media/curriculo.pdf" target="_blank" class="menu-link">Currículo</a></li>
+              <li class="menu-item"><a href="https://api.whatsapp.com/send?phone=5553999553701&text=Ol%C3%A1!" target="_blank" class="menu-link">Contato</a></li>
             </ul>
           </nav>
           <div class="social-media">
             <a href="https://www.linkedin.com/in/eduardohornke/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/eduardohornke" target="_blank"><i class="fab fa-github-alt"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5553999553701&text=Ol%C3%A1!" target="_blank"><i class="fab fa-whatsapp"></i></a>
           </div>
         </aside>
 
@@ -53,10 +53,10 @@
             </div>
 
         <div id="imgconhecimento">
-
                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" title="HTML" alt="html">
                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" title="CSS" alt="css">
                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" title="SASS" alt="sass">
+                <img src="https://raw.githubusercontent.com/jgthms/bulma/47d7f8dea8112bfa0b91c63f649ed6356f83a157/docs/_includes/svg/bulma-b.svg" title="Bulma" alt="bulma">
                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" title="Bootstrap" alt="bootstrap">
                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original.svg" title="jQuery" alt="jquery">
                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="javascript">
@@ -64,59 +64,39 @@
                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" title="React" alt="react">
                 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png" title="Angular" alt="angular">
                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" title="Vue.js" alt="vuejs">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" title="Redux.js" alt="reduxjs">
                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" title="Node.js" alt="nodejs">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" title="MySQL" alt="mysql">
                 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" title="MongoDB" alt="mongodb">
-
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" title="PostgreSQL" alt="PostgreSQL">
         </div>
-
-        </section>
-
+        </section> 
 
         <div class="sessao-projetos" id="projetos">
-            <div class="sessao-header">
-              <h1>Projetos</h1>
-            </div>
-            <div class="projetos">
-            </div>
-  
-          </section>
-  
-          <section class="sessao-contato" id="contato">
-            <div class="contato-wrapper">
-              <div class="contato-left"></div>
-              <div class="contato-right">
-                <h1>Contato</h1>
-                <form>
-                  <div class="input-group">
-                    <input type="text" class="field" id="nome">
-                    <label for="nome" class="field-label">Nome</label>
-                  </div>
-                  <div class="input-group">
-                    <input type="text" class="field" id="email">
-                    <label for="email" class="field-label">E-mail</label>
-                  </div>
-                  <div class="input-group">
-                    <textarea class="field" id="mensagem"></textarea>
-                    <label for="mensagem" class="field-label">Mensagem</label>
-                  </div>
-                  <button type="submit" class="btn btn-submit">Enviar</button>
-                </form>
-              </div>
-            </div>
-          </section>
-  
+          <div class="sessao-header">
+            <h1>Projetos</h1>
+          </div>
+          <div class="projetos">
+
+            <div class="container-slide">
+              <div class="action-button" id="previous">&laquo</div>
+              <div class="container-items" id="container-items"></div>
+              <div class="action-button" id="next">&raquo</div>
+          </div>
+          
+        </div>
+
           <footer>
             <div class="footer-content">
               <p>
-                &copy; Eduardo Hörnke
+                2022 &copy; Eduardo Hörnke
               </p>
             </div>
           </footer>
+
           <a href="#home" id="link-topo">
             <i class="fas fa-arrow-up"></i>
           </a>
       </div>
-        <script src="assets/script.js"></script>
+        <script src="assets/script/script.js"></script>
     </body>
 </html>

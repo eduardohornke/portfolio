@@ -10,7 +10,7 @@
 
 :root {
     --font-primary: "Baloo Da 2", serif;
-    --font-secundary: "Josefin Slab", serif;
+    --font-secundary: "Arial", serif;
     --font-action: "Muli", serif;
   }
 
@@ -135,7 +135,7 @@ header {
 .banner p {
   font-family: var(--font-secundary);
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
   margin-bottom: 2rem;
   opacity: 0;
@@ -335,50 +335,6 @@ header {
   visibility: visible;
 }
 
-.sessao-contato {
-  width: 100%;
-  height: 100vh;
-  background-color: #272727;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contato-wrapper {
-  width: 60%;
-  height: 30rem;
-  display: flex;
-  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
-}
-
-.contato-left {
-  width: 35%;
-  background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
-    url(media/bg-contato.jpg);
-  background-size: cover;
-}
-
-.contato-right {
-  width: 65%;
-  background-color: #eee;
-  padding: 1rem 3rem 3rem 3rem;
-}
-
-.sessao-contato h1 {
-  width: 100%;
-  text-align: center;
-  font-family: var(--font-primary);
-  color: #272727;
-  font-size: 3rem;
-  font-weight: lighter;
-}
-
-.sessao-contato form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .input-group {
   position: relative;
@@ -492,5 +448,56 @@ footer{
      padding: 200px;
  }
 
- 
+.container-slide{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    height: 50vh;
+    background-color: black;
+    margin: 20vh auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px black;
+    border: 5px solid black;
+}
 
+.container-items {
+    position: absolute;
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item {
+    width: 50vw;
+    height: 50vh;
+    transition: all 1s;
+}
+.item:first-child{
+    margin-left: -100%;
+}
+
+.item img {
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+.action-button{
+    font: bold 30px sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    color: #00000000;
+    user-select: none;
+    z-index: 1;
+}
+.action-button{
+    color: white;
+    background-color: #00000055;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;
+}
